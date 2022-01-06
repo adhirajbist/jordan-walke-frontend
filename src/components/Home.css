@@ -1,0 +1,8 @@
+.code-card{
+    width: 50vw;
+}
+
+.code-card iframe{
+    height: 50vh;
+    border: 1px solid rgba(0, 0, 0, 0.250);
+}

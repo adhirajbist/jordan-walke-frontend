@@ -1,0 +1,46 @@
+.check{
+    border: 1px solid red;
+}
+
+iframe{
+    background-color: white;
+}
+
+.user-code{
+    position: relative;
+}
+
+.editor-input, .highlighter{
+    height: 50vh !important;
+    margin: 0 !important;
+    padding: 12px !important;
+    font-size: 12pt !important;
+    font-family: monospace !important;
+    line-height: 1.5 !important;
+    border: 1px solid rgba(0, 0, 0, 0.125) !important;
+    overflow-y:scroll !important;
+}
+
+.editor-input{
+    color: transparent;
+    background-color: transparent;
+    caret-color: black;
+    resize: none;
+    outline: none;
+    white-space: nowrap;
+    z-index: 1;
+}
+
+.highlighter{
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 0;
+}
+
+.htmlOutput{
+    height: 50vh;
+    padding: 0px;
+    border: 1px solid rgba(0, 0, 0, 0.250);
+}
+

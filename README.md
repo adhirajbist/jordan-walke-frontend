@@ -1,3 +1,11 @@
+## About The Project
+Jordan Walke a website built using MongoDb, Express.js, React and Node.js (MERN stack). It a platform to help frontend developers showcase their code or look for ideas by going through submissions of other users. It has a complete sign up functionality with authentication and it features a code editor with syntax highlighting where logged in user can type and execute their code.
+## This is the frontend of the project
+Built with:
+* [React](https://reactjs.org/)
+* [Bootstrap v5.0](https://getbootstrap.com/)
+* [Axios](https://axios-http.com/)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
