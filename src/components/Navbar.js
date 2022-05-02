@@ -28,7 +28,7 @@ const Navbar = (props) => {
                         <li className="nav-item">
                         <NavLink className="nav-link" to="/">Home</NavLink>
                         </li>
-                        { props.name !== "" &&
+                        { props.name !== "" && !props.isAdmin &&
                         <>
                             <li className="nav-item">
                             <NavLink className="nav-link" to="/editor">Create</NavLink>

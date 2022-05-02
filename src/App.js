@@ -21,7 +21,8 @@ function App() {
 	const [signedInUser, setSignedInUser] = useState({
 		id:"",
 		name:"",
-		email:""
+		email:"",
+		isAdmin:false,
 	});
 	
 	useEffect(() => {
@@ -29,7 +30,12 @@ function App() {
 			try{
 				const response = await axios.get('/finduser');
 				console.log(response);
-				setSignedInUser({id:response.data._id, name:response.data.name, email:response.data.email});
+				setSignedInUser({
+					id:response.data._id, 
+					name:response.data.name, 
+					email:response.data.email,
+					isAdmin:response.data.isAdmin
+				});
 			} catch (error) {
 				console.log(error.response);
 			}
@@ -39,9 +45,9 @@ function App() {
 
 	return(
 		<>
-			<Navbar name={signedInUser.name} />
+			<Navbar name={signedInUser.name} isAdmin={signedInUser.isAdmin} />
 			<Routes>
-				<Route path="/" element={<Home />} />
+				<Route path="/" element={<Home isAdmin={signedInUser.isAdmin} />} />
 
 				<Route path="/uploads" element={<Uploads authorId={signedInUser.id} />} />
 
